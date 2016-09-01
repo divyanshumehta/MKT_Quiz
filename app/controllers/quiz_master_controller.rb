@@ -28,4 +28,5 @@ before_action :authenticate_user!
 
   	def leaderboard
   		@user = User.order('score DESC').limit(10).take
+    end
 end

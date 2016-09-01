@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'quiz' => 'quiz_master#lvl'
   post 'quiz' => 'quiz_master#check'
+  get 'leaderboard' => 'quiz_master#leaderboard'
 
   root 'quiz_master#home'
 
