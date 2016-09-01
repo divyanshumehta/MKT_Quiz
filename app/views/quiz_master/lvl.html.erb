@@ -1,0 +1,14 @@
+
+Welcome <%=@user.name%>
+
+
+<div align="center">
+	<h1>Level <%=@user.lvl%></h1>
+	Q. <%=@q.question%>
+	<%= form_tag( method: "post") do %><br/>
+		<%= text_field_tag(:answer) %><br/><br/>
+		<%=submit_tag("Answer") %>
+		<h5>Score: <%=@user.score%></h5>
+	<%end%>
+</div>
+
