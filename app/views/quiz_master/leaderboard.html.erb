@@ -1,3 +1,6 @@
+<h1>Top Scorers</h1>
+<%sl=1%>
 <% @user.each do |u| %>
-<%= u.name %>  <%= track.score %>
+<%=sl%> <%= u.name %>  <%= u.score %><br/>
+<%sl=sl+1%>
 <% end %>   
