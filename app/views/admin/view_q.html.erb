@@ -1,0 +1,3 @@
+<% @q.each do |q|%>
+	<%=q.id%> <%=q.question%> <%=q.answer%> <%=q.lvl%> <a href="del_q/?del_qid=<%=q.id%>">Delete</a><br />
+<%end%>

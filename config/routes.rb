@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   post 'quiz' => 'quiz_master#check'
   get 'leaderboard' => 'quiz_master#leaderboard'
 
+  get 'admin' => 'admin#home'
+  get 'view_q' => 'admin#view_q'
+  get 'del_q' => 	'admin#del_q'
+
   root 'quiz_master#home'
 
   #devise_for :users
