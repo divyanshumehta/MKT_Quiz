@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this app on localhost install ruby version 2.3.1 and rails version 5.0.0
+http://railsapps.github.io/installrubyonrails-ubuntu.html
 
-Things you may want to cover:
+then in the app directory run 
+ $bundle install
 
-* Ruby version
+after that run
+	$rails s
 
-* System dependencies
+in the browser go to
+	http://localhost:3000/
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
