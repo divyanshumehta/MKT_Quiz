@@ -5,6 +5,6 @@ Score : <%=@user.score%><br />
 
 <a href="/leaderboard">Leaderboard</a>
 
-<% if @user.thuntadmin?%>
+<% if @user.admin?%>
 	<a href='/admin'>Admin</a>
 <%end%>

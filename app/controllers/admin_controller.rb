@@ -24,7 +24,7 @@ before_action :verify_admin
 
 	def verify_admin
 		user = current_user
-		unless user.thuntadmin?
+		unless user.admin?
 			redirec_to root_path
 		end
 	end
