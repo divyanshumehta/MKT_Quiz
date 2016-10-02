@@ -1,0 +1,6 @@
+<%= form_tag("/add_q", method: "post") do %>
+Question: <%= text_field(:qn, :question) %><br/>
+Answer: <%= text_field(:qn, :answer) %><br/>
+Level: <%= text_field(:qn, :lvl) %><br/>
+<%= submit_tag("Create Question")  %>
+<%end%>

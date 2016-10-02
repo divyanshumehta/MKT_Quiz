@@ -7,6 +7,16 @@ before_action :verify_admin
 	end
 
 	def add_q
+		
+	end
+
+	def create_q
+		q = Qn.new
+		q.question = params[:qn][:question]
+		q.answer = params[:qn][:answer]
+		q.lvl = params[:qn][:lvl]
+		q.save
+		redirect_to "/admin"
 	end
 
 	def del_q
@@ -25,7 +35,7 @@ before_action :verify_admin
 	def verify_admin
 		user = current_user
 		unless user.admin?
-			redirec_to root_path
+			redirect_to root_path
 		end
 	end
 end

@@ -6,14 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   
-  <header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
+  <header class="navbar  navbar-inverse">
+  <div id="nav_bar" class="container">
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to "Home",   '/' %></li>
         
         <li><% if user_signed_in? %>
   

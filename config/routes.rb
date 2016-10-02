@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'view_q' => 'admin#view_q'
   get 'del_q' => 	'admin#del_q'
   get 'add_q' => 'admin#add_q'
+  post 'add_q' => 'admin#create_q'
 
   root 'quiz_master#home'
 
