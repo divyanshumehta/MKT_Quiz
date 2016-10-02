@@ -22,7 +22,7 @@ before_action :authenticate_user!
   			flash[:notice] = "Wrong Answer :("
   		end
   		user.update_attribute(:lvl,user.lvl+1)
-  		redirect_to  "http://localhost:3000/quiz"
+  		redirect_to  "/quiz"
   	end
 
 
