@@ -1,14 +1,26 @@
-<h2>Log in</h2>
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+<style type="text/css">
+  #pannel{
+    text-align: center;
+    background-color:#64757766;
+    max-width: 40%;
+    padding: 7%;
+    box-shadow: 0px 0px 20px #9B8A8A;
+    border-radius: 10px;
+  }
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+</style>
+<div class="container" id="pannel">
+
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  
+        <%= f.email_field :email, autofocus: true ,placeholder:"Email",class:"form-control input-sm"%>
+        <br/>
+
+
+        <%= f.password_field :password, autocomplete: "off",placeholder: "Password", class:"form-control input-sm"%> 
+  
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">
@@ -17,9 +29,10 @@
     </div>
   <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+  <div class="field">
+    <%= f.submit "Log in",class:'btn btn-primary' %>
   </div>
 <% end %>
 
 <%= render "users/shared/links" %>
+</div>

@@ -1,13 +1,24 @@
+<style type="text/css">
+  #pannel{
+    text-align: center;
+    background-color:#64757766;
+    max-width: 40%;
+    padding: 7%;
+    box-shadow: 0px 0px 20px #9B8A8A;
+    border-radius: 10px;
+  }
 
-Welcome <%=@user.name%>
+
+</style>
 
 
-<div class="" >
+<div class="container" id="pannel">
+
 	<h1>Level <%=@user.lvl%></h1>
 	Q. <%=@q.question%>
 	<%= form_tag( "/quiz",method: "post") do %><br/>
-		<%= text_field_tag(:answer) %><br/><br/>
-		<%=submit_tag("Answer") %>
+		<%= text_field_tag :answer,"",placeholder:"Wirte Your Answer", class:"form-control input-sm" %><br/><br/>
+		<%=submit_tag "Commit" ,class:'btn btn-primary'  %>
 		<h5>Score: <%=@user.score%></h5>
 	<%end%>
 </div>

@@ -1,10 +1,25 @@
-Hey <%=@user.name%><br/>
+<style type="text/css">
+  #pannel{
+    text-align: center;
+    background-color:#64757766;
+    max-width: 40%;
+    padding: 7%;
+    box-shadow: 0px 0px 20px #9B8A8A;
+    border-radius: 10px;
+  }
+
+
+</style>
+
+<div id="pannel" class="container">
+<h1>Hey <%=@user.name%></h1><br/>
 Current Level: <%=@user.lvl%><br/>
 Score : <%=@user.score%><br />
 <a href="/quiz">Continue Quiz</a><br />
 
-<a href="/leaderboard">Leaderboard</a>
+<a href="/leaderboard">Leaderboard</a><br/>
 
 <% if @user.admin?%>
 	<a href='/admin'>Admin</a>
 <%end%>
+</div>
