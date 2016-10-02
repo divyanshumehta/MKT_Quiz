@@ -9,8 +9,13 @@ before_action :authenticate_user!
 	def lvl
   		@user = current_user
   		@q = Qn.where("lvl=?",@user.lvl).limit(1).order("RANDOM()").take
-  		session[:qid]=@q.id
-  	end
+      if(@q)
+  		  session[:qid]=@q.id
+  	   else
+        flash[:notice]= "Sorry we currently dont have more Levels"
+        redirect_to "/"
+      end
+    end
 
   	def check
   		user = current_user
