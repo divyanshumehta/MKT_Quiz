@@ -6,7 +6,7 @@ http://railsapps.github.io/installrubyonrails-ubuntu.html
 Also install PostgreSQL
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
 
-then in the terminal browse to the home directory run 
+then in the terminal browse to the app directory run 
  $bundle install
 
 then run
