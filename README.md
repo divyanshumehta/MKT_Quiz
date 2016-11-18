@@ -9,7 +9,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgres
 then in the terminal browse to the app directory run 
  `$bundle install`
 
-If u already had Postgre installed then go on and make changes to
+If u already had Postgres installed then go on and make changes to
 `config/database.yml`
 Else replace `  #username: myapp` on Line 32 in `config/databse.yml` with `#username:postgres`
 
